@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Pomodoro Productivity App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="pomodoro-container">
+  <h2> Pomodoro Timer</h2>
+
+  <div class="timer-circle">
+    <span id="timer">25:00</span>
+  </div>
+
+  <div class="controls">
+    <button id="startBtn">Start</button>
+    <button id="pauseBtn"> Pause</button>
+    <button id="resetBtn"> Reset</button>
+  </div>
+
+  <div class="settings">
+    <p>Focus Time: <span id="focusTime">25</span> min | Break Time: <span id="breakTime">5</span> min</p>
+    <input type="range" id="focusRange" min="15" max="60" value="25">
+    <input type="range" id="breakRange" min="3" max="15" value="5">
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
